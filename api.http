@@ -1,0 +1,16 @@
+### save branch on local
+POST http://localhost:8080/branch
+
+### get all branch on local
+GET http://localhost:8080/branch
+
+
+
+### save branch
+POST http://localhost:9050/branch
+
+
+### get all branch
+GET http://localhost:9050/branch
+
+

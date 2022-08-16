@@ -1,0 +1,20 @@
+version: '3.1'
+services:
+
+  PostgreSQL:
+    image: postgres
+    ports:
+      - "5435:5432"
+    environment:
+      - POSTGRES_PASSWORD=123456
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=branch
+    networks:
+      spring-postgre-docker-for-local-2:
+
+networks:
+  spring-postgre-docker-for-local-2:
+    driver: bridge
+
+
+# docker-compose  -f docker-compose-local-api-and-docker-db.yml up
